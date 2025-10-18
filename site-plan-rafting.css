@@ -3,18 +3,15 @@
 :root {
     --heading-font: "Raleway", Arial, sans-serif;
     --paragraph-font: "Open Sans", Helvetica, sans-serif;
-    
     --primary-color: #198acc;
     --secondary-color: #52B69A;
     --accent1-color: #D9ED92;
     --accent2-color: #FFFFFF;
-
     --headline-color-on-white: #2A6F97;
     --headline-color-on-color: #FFFFFF;
     --paragraph-color-on-white: #2A6F97;
     --paragraph-color-on-color: #FFFFFF;
     --paragraph-background-color: #52B69A;
-    
     --nav-link-color: #2A6F97;
     --nav-background-color: #D9ED92;
     --nav-hover-link-color: #FFFFFF;
@@ -31,6 +28,11 @@ body {
     line-height: 1.6;
 }
 
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 header, main, footer {
     max-width: 1200px;
     margin: 0 auto;
@@ -44,7 +46,7 @@ header {
 }
 
 .logo {
-    width: 250px;
+    width: 80px; /* Updated to match instructions */
     height: auto;
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
     margin-bottom: 1em;
@@ -61,6 +63,10 @@ h2 {
     margin-top: 1.5em;
 }
 
+h4 {
+    color: var(--headline-color-on-white);
+}
+
 hr {
     border: 0;
     height: 2px;
@@ -71,6 +77,14 @@ hr {
 
 section {
     padding: 2em 0;
+}
+
+nav a,
+#hero-msg h1,
+#hero-msg h4,
+.button-box,
+main section {
+    text-align: center;
 }
 
 ul {
@@ -99,6 +113,68 @@ nav a:hover {
     border-radius: 5px;
 }
 
+#background {
+    height: 725px;
+    background-color: var(--secondary-color); /* Using your secondary color */
+}
+
+#hero-img {
+    width: 100%;
+}
+
+.icon {
+    width: 80px;
+}
+
+.book,
+.join {
+    background-color: var(--primary-color);
+    color: var(--headline-color-on-color);
+    text-decoration: none;
+}
+
+.book:hover,
+.join:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+.msg {
+    background-color: var(--paragraph-background-color);
+}
+
+.msg h2 {
+    color: var(--headline-color-on-color);
+}
+
+.msg p {
+    color: var(--paragraph-color-on-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 1em;
+    margin-top: 2em;
+}
+
+footer a {
+    color: var(--accent2-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--accent1-color);
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
 .sitemap-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -125,13 +201,6 @@ nav a:hover {
     margin: 2em auto;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
-}
-
-footer {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-    padding: 1em;
-    margin-top: 2em;
 }
 
 @media (max-width: 800px) {
