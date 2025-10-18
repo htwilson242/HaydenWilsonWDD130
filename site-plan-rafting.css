@@ -134,9 +134,9 @@ footer {
     margin-top: 2em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     nav a {
-        margin: 0 0.5em;
+        margin: 0 auto;
         display: block;
         padding: 0.5em 0;
     }
