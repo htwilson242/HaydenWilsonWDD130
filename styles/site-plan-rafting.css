@@ -30,7 +30,7 @@ body {
     color: var(--paragraph-color-on-white);
     text-align: center;
     line-height: 1.6;
-    font-size: 22px; /* Increased default font size */
+    font-size: 22px;
 }
 
 #content {
@@ -55,7 +55,7 @@ header {
 }
 
 .logo {
-    width: 160px;
+    width: 80px;
     height: auto;
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
     margin-bottom: 1em;
@@ -64,8 +64,7 @@ header {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--headline-color-on-white);
-    margin: 0.5em 0;
-    margin: 0; /* Reset for h2 as per instructions */
+    margin: 0;
 }
 
 h2 {
@@ -124,7 +123,7 @@ nav a {
     margin: 0 1.5em;
     font-weight: bold;
     transition: color 0.3s ease;
-    padding: 35px; /* Updated per instructions */
+    padding: 35px;
 }
 
 nav a:hover {
@@ -140,12 +139,13 @@ nav a:hover {
 }
 
 #hero-img {
-    width: 800px;
+    width: 100%;
+    border: 5px solid var(--accent1-color); /* Added border */
 }
 
 .icon {
     width: 80px;
-    padding-top: 10px; /* Updated per instructions */
+    padding-top: 10px;
 }
 
 .book,
@@ -153,10 +153,10 @@ nav a:hover {
     background-color: var(--primary-color);
     color: var(--headline-color-on-color);
     text-decoration: none;
-    font-size: 18px; /* Updated per instructions */
-    padding: 15px 30px; /* Updated per instructions */
-    margin-top: 50px; /* Updated per instructions */
-    border-radius: 5px; /* Updated per instructions */
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover,
@@ -167,8 +167,8 @@ nav a:hover {
 
 .msg {
     background-color: var(--paragraph-background-color);
-    line-height: 1.5em; /* Updated per instructions */
-    padding: 35px; /* Updated per instructions */
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
@@ -177,21 +177,21 @@ nav a:hover {
 
 .msg p {
     color: var(--paragraph-color-on-color);
-    font-size: 0.8em; /* Updated per instructions */
-    padding-bottom: 15px; /* Updated per instructions */
+    font-size: 0.8em;
+    padding-bottom: 15px;
 }
 
 .rivers-card,
 .camping-card,
 .rapids-card {
-    margin: 200px 0; /* Updated per instructions */
+    margin: 200px 0;
 }
 
 footer {
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    padding: 25px 50px; /* Updated per instructions */
-    margin-top: 200px; /* Updated per instructions */
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
@@ -212,7 +212,7 @@ footer p a:hover {
 }
 
 footer .social img {
-    padding-top: 15px; /* Updated per instructions */
+    padding-top: 15px;
 }
 
 .sitemap-grid {
@@ -241,27 +241,4 @@ footer .social img {
     margin: 2em auto;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
-}
-
-.card-img {
-    border: 10px solid var(--accent1-color); /* Updated with accent1-color */
-}
-
-main section img {
-    box-sizing: border-box; /* Updated per instructions */
-}
-
-@media (max-width: 800px) {
-    nav a {
-        margin: 0 auto;
-        display: block;
-        padding: 0.5em 0;
-    }
-    .sitemap-grid {
-        grid-template-columns: 1fr;
-        max-width: 800px;
-    }
-    .wireframe {
-        max-width: 800px;
-    }
 }
