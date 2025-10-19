@@ -55,7 +55,7 @@ header {
 }
 
 .logo {
-    width: 80px;
+    width: 160px;
     height: auto;
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
     margin-bottom: 1em;
@@ -140,7 +140,7 @@ nav a:hover {
 }
 
 #hero-img {
-    width: 100%;
+    width: 800px;
 }
 
 .icon {
@@ -259,9 +259,9 @@ main section img {
     }
     .sitemap-grid {
         grid-template-columns: 1fr;
-        max-width: 100%;
+        max-width: 800px;
     }
     .wireframe {
-        max-width: 100%;
+        max-width: 800px;
     }
 }
