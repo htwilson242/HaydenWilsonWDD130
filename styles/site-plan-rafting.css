@@ -139,8 +139,11 @@ nav a:hover {
 }
 
 #hero-img {
-    width: 725px;
-    border: 5px solid var(--accent1-color); /* Added border */
+    width: 100%;
+}
+
+img {
+    border: 5px solid var(--accent1-color); /* Added border to all images */
 }
 
 .icon {
@@ -241,4 +244,27 @@ footer .social img {
     margin: 2em auto;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
+}
+
+.card-img {
+    border: 10px solid var(--accent1-color);
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+    nav a {
+        margin: 0 auto;
+        display: block;
+        padding: 0.5em 0;
+    }
+    .sitemap-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+    .wireframe {
+        max-width: 100%;
+    }
 }
