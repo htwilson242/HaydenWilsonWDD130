@@ -139,7 +139,7 @@ nav a:hover {
 }
 
 #hero-img {
-    width: 100%;
+    width: 725px;
     border: 5px solid var(--accent1-color); /* Added border */
 }
 
