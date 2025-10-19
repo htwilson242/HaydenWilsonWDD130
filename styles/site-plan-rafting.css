@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lora:wght@400;600&display=swap');
 
 :root {
-    --heading-font: "Raleway", Arial, sans-serif;
-    --paragraph-font: "Open Sans", Helvetica, sans-serif;
+    --heading-font: "Montserrat", "Arial Black", sans-serif;
+    --paragraph-font: "Lora", "Georgia", serif;
     --primary-color: #198acc;
     --secondary-color: #52B69A;
     --accent1-color: #D9ED92;
@@ -18,6 +18,10 @@
     --nav-hover-background-color: #2A6F97;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--paragraph-font);
     margin: 0;
@@ -26,6 +30,7 @@ body {
     color: var(--paragraph-color-on-white);
     text-align: center;
     line-height: 1.6;
+    font-size: 22px; /* Increased default font size */
 }
 
 #content {
@@ -45,8 +50,12 @@ header {
     padding: 2em 1em;
 }
 
+#logo_link {
+    padding-top: 5px;
+}
+
 .logo {
-    width: 80px; /* Updated to match instructions */
+    width: 80px;
     height: auto;
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.5));
     margin-bottom: 1em;
@@ -56,6 +65,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--headline-color-on-white);
     margin: 0.5em 0;
+    margin: 0; /* Reset for h2 as per instructions */
 }
 
 h2 {
@@ -63,8 +73,18 @@ h2 {
     margin-top: 1.5em;
 }
 
+.home-title {
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
+}
+
 h4 {
     color: var(--headline-color-on-white);
+}
+
+.msg h2 {
+    font-family: var(--heading-font);
 }
 
 hr {
@@ -104,6 +124,7 @@ nav a {
     margin: 0 1.5em;
     font-weight: bold;
     transition: color 0.3s ease;
+    padding: 35px; /* Updated per instructions */
 }
 
 nav a:hover {
@@ -115,15 +136,16 @@ nav a:hover {
 
 #background {
     height: 725px;
-    background-color: var(--secondary-color); /* Using your secondary color */
+    background-color: var(--secondary-color);
 }
 
 #hero-img {
-    width: 800px;
+    width: 100%;
 }
 
 .icon {
     width: 80px;
+    padding-top: 10px; /* Updated per instructions */
 }
 
 .book,
@@ -131,6 +153,10 @@ nav a:hover {
     background-color: var(--primary-color);
     color: var(--headline-color-on-color);
     text-decoration: none;
+    font-size: 18px; /* Updated per instructions */
+    padding: 15px 30px; /* Updated per instructions */
+    margin-top: 50px; /* Updated per instructions */
+    border-radius: 5px; /* Updated per instructions */
 }
 
 .book:hover,
@@ -141,6 +167,8 @@ nav a:hover {
 
 .msg {
     background-color: var(--paragraph-background-color);
+    line-height: 1.5em; /* Updated per instructions */
+    padding: 35px; /* Updated per instructions */
 }
 
 .msg h2 {
@@ -149,13 +177,21 @@ nav a:hover {
 
 .msg p {
     color: var(--paragraph-color-on-color);
+    font-size: 0.8em; /* Updated per instructions */
+    padding-bottom: 15px; /* Updated per instructions */
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+    margin: 200px 0; /* Updated per instructions */
 }
 
 footer {
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    padding: 1em;
-    margin-top: 2em;
+    padding: 25px 50px; /* Updated per instructions */
+    margin-top: 200px; /* Updated per instructions */
 }
 
 footer a {
@@ -173,6 +209,10 @@ footer p {
 
 footer p a:hover {
     text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px; /* Updated per instructions */
 }
 
 .sitemap-grid {
@@ -201,6 +241,14 @@ footer p a:hover {
     margin: 2em auto;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
+}
+
+.card-img {
+    border: 10px solid var(--accent1-color); /* Updated with accent1-color */
+}
+
+main section img {
+    box-sizing: border-box; /* Updated per instructions */
 }
 
 @media (max-width: 800px) {
